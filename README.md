@@ -3,8 +3,8 @@
 **회계·감사 실무 특화 프롬프트 라이브러리**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat)](https://opensource.org/licenses/MIT)
-[![Domain](https://img.shields.io/badge/Domain-Accounting%20%26%20Audit-blue?style=flat)]()
-[![Tool](https://img.shields.io/badge/Tool-Claude%20AI-purple?style=flat)]()
+[![Domain](https://img.shields.io/badge/Domain-Accounting%20%26%20Audit-blue?style=flat)](https://github.com/HyunSu1313/prompt-engineering-accounting/blob/main)
+[![Tool](https://img.shields.io/badge/Tool-Claude%20AI-purple?style=flat)](https://github.com/HyunSu1313/prompt-engineering-accounting/blob/main)
 
 ---
 
@@ -20,11 +20,8 @@
 
 | # | 카테고리 | 주요 활용 |
 |---|---|---|
-| 01 | [회계처리 · 기준서 해석](./01_accounting_standards.md) | 분개, 기준서 조항, 질의회신, 조서 문구 |
-| 02 | [문장 검토 · 실무 표현](./02_writing_review.md) | 검토멘트, 조서 문구, 메일, 문의 문장 |
-| 03 | [내부통제 · 통제 중요성](./03_internal_controls.md) | 권한분리, 전산권한, COSO, 내부회계, SoX |
-| 04 | [ERP · 엑셀 문제해결](./04_erp_excel.md) | 함수 오류, ERP 처리 방식, 효율화 |
-| 05 | [논리 · 계산 검증](./05_logic_verification.md) | 계산 검증, 해석 검증, 논리 흐름 점검 |
+| 01 | [레퍼런스 검색용](./01_reference_search.md) | 회계기준서 해석, 내부회계 가이드라인·개념체계, 엑셀·ERP, 논리·계산 검증 |
+| 02 | [커뮤니케이션용](./02_communication.md) | 조서 문장화, 이메일, 클라이언트 인터뷰·요청 문장 |
 
 ---
 
@@ -37,11 +34,15 @@
 **2. 실무 즉시 활용**
 감사조서 문구, 검토멘트, 메일 문장 등 복붙해서 바로 쓸 수 있는 형태로 출력합니다.
 
-**3. 근거 기반**
-회계처리 관련 프롬프트는 기준서 조항·링크·질의회신 사례번호까지 요청합니다.
-→ 불확실한 정보는 "확인된 사례 없음"으로 명시 (추정 출력 방지)
+**3. 근거 기반 + 할루시네이션 방지**
+조항·문단 번호까지 요청하고, 원문 인용 시 정확한 일치 여부를 확인합니다.
+→ 확인되지 않는 내용은 "직접 확인 필요"로 명시 (추정 출력 방지)
 
-**4. 검증 우선**
+**4. 회사 컨텍스트 옵션 (필요시 기재)**
+상장 여부 · 규모(대형/중소기업) · 업종 · 회계처리기준(K-IFRS/일반기업회계기준)을 필요시 입력합니다.
+→ 답변 기준이 달라지는 경우에만 영향을 미치며, 미기재 시 일반적인 기준으로 답변
+
+**5. 검증 우선**
 AI 출력을 그대로 사용하지 않고, 실무에서 직접 검증한 결과만 라이브러리에 포함합니다.
 
 ---
@@ -49,7 +50,7 @@ AI 출력을 그대로 사용하지 않고, 실무에서 직접 검증한 결과
 ## 🚀 사용 방법
 
 1. 필요한 카테고리 파일을 열어 템플릿 확인
-2. `[질문]` 또는 `[상황]` 부분에 실제 내용 입력
+2. `[질문]` 또는 `[상황]` 부분에 실제 내용 입력 (필요시 회사 컨텍스트 기재)
 3. Claude에 프롬프트 전체 붙여넣기
 4. 출력 결과 검토 후 실무 활용
 
@@ -58,9 +59,8 @@ AI 출력을 그대로 사용하지 않고, 실무에서 직접 검증한 결과
 ## 🔭 향후 계획
 
 - [ ] 각 카테고리 예시 케이스 추가
-- [ ] RCM 자동화 툴과 연동
-- [ ] 일반기업회계기준(K-GAAP) 버전 추가
-- [ ] SoX 특화 프롬프트 추가
+- [ ] RCM 자동화 툴(별도 프로젝트)과의 연계 사례 정리
+- [ ] SoX 특화 프롬프트 옵션 추가
 
 ---
 
@@ -68,5 +68,5 @@ AI 출력을 그대로 사용하지 않고, 실무에서 직접 검증한 결과
 
 **정현수** | KICPA | EY한영 Risk Consulting (P&C)
 
-📫 mosjeong1@gmail.com  
+📫 mosjeong1@gmail.com
 🔗 [GitHub](https://github.com/HyunSu1313)
