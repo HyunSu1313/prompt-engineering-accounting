@@ -10,7 +10,7 @@
 
 ## 📌 프로젝트 개요
 
-회계사(KICPA) 및 감사 실무자가 AI를 업무에 효과적으로 활용하기 위한 **검증된 프롬프트 템플릿 모음**입니다.
+회계사(KICPA) 및 감사 실무자가 AI를 업무에 효과적으로 활용하기 위한 **실무 적용 가능성을 검증한 프롬프트 템플릿 모음**입니다.
 
 단순한 질문이 아닌, **출력 형식·기준서 근거·실무 문구까지 즉시 활용 가능한 형태**로 설계되었습니다.
 
@@ -83,5 +83,5 @@ AI 출력을 그대로 사용하지 않고, 실무에서 직접 검증한 결과
 
 **정현수** | KICPA | EY한영 Risk Consulting (P&C)
 
-📫 mosjeong1@gmail.com
-🔗 [GitHub](https://github.com/HyunSu1313)
+- 📫 mosjeong1@gmail.com
+- 🔗 [GitHub](https://github.com/HyunSu1313)
