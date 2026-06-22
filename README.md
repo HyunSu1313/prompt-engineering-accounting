@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat)](https://opensource.org/licenses/MIT)
 [![Domain](https://img.shields.io/badge/Domain-Accounting%20%26%20Audit-blue?style=flat)](https://github.com/HyunSu1313/prompt-engineering-accounting/blob/main)
-[![Tool](https://img.shields.io/badge/Tool-Claude%20AI-purple?style=flat)](https://github.com/HyunSu1313/prompt-engineering-accounting/blob/main)
+[![Tool](https://img.shields.io/badge/Tool-AI%20Assisted-purple?style=flat)](https://github.com/HyunSu1313/prompt-engineering-accounting/blob/main)
 
 ---
 
@@ -22,6 +22,8 @@
 |---|---|---|
 | 01 | [레퍼런스 검색용](./01_reference_search.md) | 회계기준서 해석, 내부회계 가이드라인·개념체계, 엑셀·ERP, 논리·계산 검증 |
 | 02 | [커뮤니케이션용](./02_communication.md) | 조서 문장화, 이메일, 클라이언트 인터뷰·요청 문장 |
+
+📊 [프롬프트 평가 방법 및 테스트 케이스](./evaluation.md)
 
 ---
 
@@ -44,6 +46,7 @@
 
 **5. 검증 우선**
 AI 출력을 그대로 사용하지 않고, 실무에서 직접 검증한 결과만 라이브러리에 포함합니다.
+→ 평가 기준과 테스트 케이스는 [evaluation.md](./evaluation.md) 참조
 
 ---
 
@@ -51,7 +54,7 @@ AI 출력을 그대로 사용하지 않고, 실무에서 직접 검증한 결과
 
 1. 필요한 카테고리 파일을 열어 템플릿 확인
 2. `[질문]` 또는 `[상황]` 부분에 실제 내용 입력 (필요시 회사 컨텍스트 기재)
-3. LLM 도구에 입력
+3. 사용 중인 AI(Claude, Copilot 등)에 프롬프트 전체 붙여넣기
 4. 출력 결과 검토 후 실무 활용
 
 ---
